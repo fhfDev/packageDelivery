@@ -1,8 +1,7 @@
-# O hre "Package delivery"
 ```
 Téma hry: Kladné a záporné čísla
 ```
-## Návrh 1 
+## Návrh 1 - Package Delivery
 
 Naša hra by bola zameraná na edukáciu v oblasti problematiky kladných a záporných čísiel. Kuriér bude podľa výsledku príkladov chodiť na poschodia od prízemia ktoré bude na 0 na vyššie poschodia a podzemné poschodia roznášať balíky pre zákazníkov. 
 
