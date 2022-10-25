@@ -20,8 +20,8 @@ public class playerMovement : MonoBehaviour
     void Update()
     {
         moveX = Input.GetAxis("Horizontal") * Time.deltaTime * speed;
-        //moveY = Input.GetAxis("Vertical") * Time.deltaTime * speed;
-        //moveZ = Input.GetAxis("Jump") * Time.deltaTime * speed;
-        transform.Translate(moveX,0,0);
+        moveY = Input.GetAxis("Vertical") * Time.deltaTime * speed;
+        moveZ = Input.GetAxis("Jump") * Time.deltaTime * speed;
+        transform.Translate(moveX,moveY,moveZ);
     }
 }
