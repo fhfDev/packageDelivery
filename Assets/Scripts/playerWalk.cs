@@ -11,7 +11,7 @@ public class playerWalk : MonoBehaviour
 
     private void Awake()
     {
-        body = GetComponent<Rigidbody2D>();
+        body = GetComponent<Rigidbody2D>(); 
         anim = GetComponent<Animator>();
     }
 
