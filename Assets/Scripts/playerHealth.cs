@@ -1,13 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class playerHealth : MonoBehaviour
 {
-    public int health;
-    public int maxHealth = 5;
+    private int health = 100;
+    public int maxHealth = 100;
     public healthDisplay healthBar;
-
+    public int damage = 20;
+   
     public SpriteRenderer playerCourier;
     public playerWalk playerwalk;
 
@@ -16,13 +18,12 @@ public class playerHealth : MonoBehaviour
         health = maxHealth;    
         healthBar.SetMaxHealth(maxHealth);
     }
-    
 
     public void TakeDamage(int amount)
     {
         health -= amount;
 
-        healthBar.SetMaxHealth(health);
+        healthBar.SetHealth(amount);
         if (health <= 0)
         {
             playerCourier.enabled = false;
@@ -30,5 +31,16 @@ public class playerHealth : MonoBehaviour
         }
         
     }
-    
+    void Update()
+    {
+        health = maxHealth - damage;
+    } 
+
+    public void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Enemy")
+        {
+            TakeDamage(damage);
+        }
+    }
 }
