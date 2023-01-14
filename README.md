@@ -10,7 +10,7 @@
 ![GitHub contributors](https://img.shields.io/github/contributors/fhfDev/packageDelivery)
 
 # ABOUT MATL EXPRESS
-Our game aims at educating about positive and negative numbers. 
+Originally called *Package Delivery*, our game aims at educating about positive and negative numbers. 
 
 The courier goes up the floors from the ground floor, which is at 0, to the upper floors and underground floors to deliver packages to customers according to the result of the math problem. The player in the character of the courier must deliver packages. Instead of the address, there is a randomly generated math problem on the package. 
 
