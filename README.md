@@ -1,3 +1,7 @@
+<p align="center">
+  <img width="500" height="500" src="/Assets/LOGO.png" alt="MATL Express logo">
+</p>
+
 [![Branch](https://img.shields.io/badge/branch-production-cyan.svg)](https://github.com/fhfDev/packageDelivery)
 ![Release](https://img.shields.io/github/v/release/fhfDev/packageDelivery?label=version)
 ![GitHub Release Date](https://img.shields.io/github/release-date/fhfDev/packageDelivery?color=red)
