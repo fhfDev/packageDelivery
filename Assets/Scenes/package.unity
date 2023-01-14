@@ -461,6 +461,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 703918677}
   inputComponent: {fileID: 741553158}
+  sceneName: game
 --- !u!1 &723834994
 GameObject:
   m_ObjectHideFlags: 0

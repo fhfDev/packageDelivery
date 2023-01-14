@@ -9,6 +9,7 @@ public class mathGenerator : MonoBehaviour
 {
     public TextMeshProUGUI textComponent;
     public TMP_InputField inputComponent;
+    public string sceneName;
     private string result;
 
     public void Start()
@@ -39,9 +40,10 @@ public class mathGenerator : MonoBehaviour
     {
         if (string.Compare(inputComponent.text.ToString(),result) == 0)
         {
-            SceneManager.LoadScene("game");
+            SceneManager.LoadScene(sceneName);
         }
-        // tu bude cast kodu co sa ma vykonat ked je vysledok nespravny
+
+        // blok kodu, ktory sa ma vykonat ked je vysledok nespravny
     }
 
     void AssignResult(string problem)
