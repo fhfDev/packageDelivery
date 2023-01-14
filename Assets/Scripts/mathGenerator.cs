@@ -50,37 +50,37 @@ public class mathGenerator : MonoBehaviour
         {
             case "1 - (-6)":
             {
-                result = "10";
+                result = "7";
                 break;
             }
 
             case "- 8 + (+ 5)":
             {
-                result = "20";
+                result = "-3";
                 break;
             }
 
             case "- 2 + (+ 10)":
             {
-                result = "30";
+                result = "8";
                 break;
             }
 
             case "- 3 + (-5)":
             {
-                result = "40";
+                result = "-8";
                 break;
             }
 
             case "(- 2) * 9":
             {
-                result = "50";
+                result = "-18";
                 break;
             }
 
             case "10 / (-5)":
             {
-                result = "60";
+                result = "-2";
                 break;
             }
 
@@ -92,19 +92,19 @@ public class mathGenerator : MonoBehaviour
 
             case "(+ 4) + (+ 41)":
             {
-                result = "80";
+                result = "45";
                 break;
             }
 
             case "- 12 + 12":
             {
-                result = "90";
+                result = "0";
                 break;
             }
 
             case "(- 5) + (-15)":
             {   
-                result = "100";
+                result = "-20";
                 break;
             }
         }
