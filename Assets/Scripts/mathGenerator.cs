@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -9,7 +10,7 @@ public class mathGenerator : MonoBehaviour
     public TextMeshProUGUI textComponent;
     public TMP_InputField inputComponent;
     private string result;
-    
+
     public void Start()
     {
         string[] problems = new string[]    // source: https://cloud-0.edupage.org/cloud/kladne_a_zaporne_cisla.pdf?z%3ALpY%2B0y5zUqIxqqmF56W5kbMiRw6Gar1IjopTiAJhH5aHBEDoqaH2LRaAkmqUpfUv
@@ -20,7 +21,7 @@ public class mathGenerator : MonoBehaviour
             "- 3 + (-5)",
             "(- 2) * 9",
             "10 / (-5)",
-            "10x - 4",
+            "10 - 4",
             "(+ 4) + (+ 41)",
             "- 12 + 12",
             "(- 5) + (-15)"
@@ -30,7 +31,7 @@ public class mathGenerator : MonoBehaviour
         textComponent = GetComponent<TextMeshProUGUI>();
         int useProblem = random.Next(problems.Length);
         string selectedProblem = problems[useProblem];
-        textComponent.text = selectedProblem.ToString();   // Debug.Log(selectedProblem);
+        textComponent.text = selectedProblem.ToString();
         AssignResult(selectedProblem);
     }
 
@@ -38,9 +39,8 @@ public class mathGenerator : MonoBehaviour
     {
         if (string.Compare(inputComponent.text.ToString(),result) == 0)
         {
-            // tu bude cast kodu co sa ma vykonat ked je vysledok spravny
+            SceneManager.LoadScene("game");
         }
-
         // tu bude cast kodu co sa ma vykonat ked je vysledok nespravny
     }
 
@@ -84,9 +84,9 @@ public class mathGenerator : MonoBehaviour
                 break;
             }
 
-            case "10x - 4":
+            case "10 - 4":
             {
-                result = "70";
+                result = "6";
                 break;
             }
 
