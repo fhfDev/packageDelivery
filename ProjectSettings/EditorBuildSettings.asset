@@ -26,5 +26,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/vytahDole.unity
     guid: 06b7ba94b87f3d0439d30f4f9a965e5f
+  - enabled: 1
+    path: Assets/Scenes/package.unity
+    guid: c56acbb499d41eb4393401ed1daca959
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 8275eb37090cefa4ca74338e3d719a9d, type: 2}
