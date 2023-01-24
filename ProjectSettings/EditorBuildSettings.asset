@@ -6,20 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Ghost_with_Axe/Scenes/Demo(Ghost_axe).unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/mainMenu.unity
+    guid: 7d094888cab56c64fb1136ee2ed35fb3
   - enabled: 1
     path: Assets/Scenes/game.unity
     guid: b054d719fb56bdb46bb35efffa814cba
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/another_level.unity
     guid: c40575856bea0544887c2982fbb4e6b2
-  - enabled: 0
-    path: Assets/Scenes/vytah.unity
-    guid: aa4f1b5ee9fc2974cb7b7e1ab8055ef6
   - enabled: 1
     path: Assets/Scenes/vytahHore.unity
     guid: 1144ea70003c7fe41b3446a652c9cd43

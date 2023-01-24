@@ -5,42 +5,29 @@ using UnityEngine.UI;
 
 public class playerHealth : MonoBehaviour
 {
-    private int health = 100;
-    public int maxHealth = 100;
-    public healthDisplay healthBar;
-    public int damage = 20;
-   
-    public SpriteRenderer playerCourier;
-    public playerWalk playerwalk;
+    public Image healthBar;
+    public float healthAmount = 100f;
 
    public void Start()
     {
-        health = maxHealth;    
-        healthBar.SetMaxHealth(maxHealth);
-    }
-
-    public void TakeDamage(int amount)
-    {
-        health -= amount;
-
-        healthBar.SetHealth(amount);
-        if (health <= 0)
-        {
-            playerCourier.enabled = false;
-            playerwalk.enabled = false;
-        }
         
     }
-    void Update()
-    {
-        health = maxHealth - damage;
-    } 
 
-    public void OnCollisionEnter(Collision collision)
+    [System.Obsolete]
+    public void Update()
     {
-        if (collision.gameObject.tag == "Enemy")
+        if (healthAmount <= 0)
         {
-            TakeDamage(damage);
+            Application.LoadLevel(Application.loadedLevel);
         }
+    }
+
+    public void TakeDamage(float damage)
+    {
+        healthAmount -= damage;
+
+        healthBar.fillAmount = healthAmount / 100f;
+        
+        
     }
 }
